@@ -1,0 +1,116 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 1rem;
+	padding: 1rem;
+
+	h1 {
+		font-size: 5rem;
+
+		@media (max-width: 768px) {
+			font-size: 4rem;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 3rem;
+		}
+	}
+
+	h2 {
+		font-size: 3rem;
+
+		@media (max-width: 768px) {
+			font-size: 2.5rem;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 2rem;
+		}
+	}
+
+	&__levels {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 40%;
+		gap: 2rem;
+
+		@media (max-width: 1024px) {
+			width: 60%;
+		}
+
+		@media (max-width: 768px) {
+			width: 80%;
+			gap: 2rem;
+		}
+
+		@media (max-width: 480px) {
+			width: 90%;
+			gap: 1.5rem;
+		}
+
+		&-plays {
+			background-color: #697565;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			text-align: left;
+			padding: 0.8rem 2rem;
+			border-radius: 5rem;
+			color: #1e201e;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: #5a6554;
+			}
+
+			@media (max-width: 768px) {
+				padding: 0.6rem 1.5rem;
+			}
+
+			@media (max-width: 480px) {
+				padding: 0.4rem 1rem;
+			}
+
+			&-card {
+				font-size: 3rem;
+
+				@media (max-width: 768px) {
+					font-size: 2.5rem;
+				}
+
+				@media (max-width: 480px) {
+					font-size: 2rem;
+				}
+			}
+
+			&-pair {
+				font-size: 2.2rem;
+
+				@media (max-width: 768px) {
+					font-size: 2rem;
+				}
+
+				@media (max-width: 480px) {
+					font-size: 1.8rem;
+				}
+			}
+
+			img {
+				width: 4rem;
+
+				@media (max-width: 768px) {
+					width: 3.5rem;
+				}
+
+				@media (max-width: 480px) {
+					width: 3rem;
+				}
+			}
+		}
+	}
+}

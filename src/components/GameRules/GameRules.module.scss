@@ -1,0 +1,94 @@
+.game-rules {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	min-height: 100vh;
+
+	@media (max-width: 768px) {
+		padding: 1.5rem;
+		max-width: 90%;
+	}
+
+	@media (max-width: 480px) {
+		padding: 1rem;
+		max-width: 95%;
+	}
+
+	&__title {
+		font-size: 3.5rem;
+		margin-bottom: 1.5rem;
+
+		@media (max-width: 768px) {
+			font-size: 3rem;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 2.5rem;
+		}
+	}
+
+	&__rules {
+		list-style-type: decimal;
+		font-size: 1.6rem;
+		text-align: left;
+		width: 70%;
+		margin: 0 auto;
+
+		@media (max-width: 768px) {
+			font-size: 1.5rem;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 1.4rem;
+		}
+
+		li {
+			margin-bottom: 1.2rem;
+
+			@media (max-width: 480px) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	&__button {
+		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+
+		a {
+			text-decoration: none;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 1.6rem;
+			padding: 1rem 2.5rem;
+			background-color: #697565;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: #5a6554;
+			}
+
+			@media (max-width: 768px) {
+				font-size: 1.4rem;
+				padding: 0.8rem 1.8rem;
+			}
+
+			@media (max-width: 480px) {
+				font-size: 1.2rem;
+				padding: 0.6rem 1.5rem;
+			}
+		}
+	}
+}
